@@ -58,4 +58,10 @@ public class StudentServiceImpl implements StudentService {
 
         return studentMapper.findTopSubjects();
     }
+
+    @Override
+    public List<Student> findAllByPro() {
+
+        return studentMapper.findAllByPro();
+    }
 }

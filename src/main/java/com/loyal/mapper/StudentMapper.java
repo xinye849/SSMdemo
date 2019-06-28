@@ -27,4 +27,7 @@ public interface StudentMapper {
 
    @Select("SELECT * FROM s_student WHERE score IN (SELECT MAX(score) FROM s_student GROUP BY `subject`);")
     List<Student> findTopSubjects();
+
+   @Select({"call pro1()"})
+    List<Student> findAllByPro();
 }

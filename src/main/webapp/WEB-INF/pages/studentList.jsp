@@ -33,6 +33,7 @@
 
 
 <a href="${pageContext.request.contextPath}/maxCountById">分数最高者</a><br>
-<a href="${pageContext.request.contextPath}/findTopSubjects">各科状元</a>
+<a href="${pageContext.request.contextPath}/findTopSubjects">各科状元</a><br>
+<a href="${pageContext.request.contextPath}/findAllByPro">findAllByPro</a>
 </body>
 </html>

@@ -72,7 +72,7 @@ public class StudentController {
          return null;
      }
  */
-    @RequestMapping(value = "/maxCountById",produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/maxCountById", produces = "application/json; charset=utf-8")
     @ResponseBody
     public String maxCountById() throws JsonProcessingException {
         List<Student> students = studentService.maxCountById();
@@ -89,5 +89,11 @@ public class StudentController {
         String s = mapper.writeValueAsString(top);
         return s;
 
+    }
+
+    @RequestMapping("/findAllByPro")
+    public String findAllByPro() {
+        List<Student> all = studentService.findAllByPro();
+        return null;
     }
 }

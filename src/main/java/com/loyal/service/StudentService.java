@@ -18,4 +18,6 @@ public interface StudentService {
     List<Student> maxCountById();
 
     List<Student> findTopSubjects();
+
+    List<Student> findAllByPro();
 }
